@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.error-snackbar {
+  background-color: #f44336; /* red for error */
+  color: #fff; /* white text */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.error-panel {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #f44336;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}

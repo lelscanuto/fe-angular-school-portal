@@ -1,0 +1,45 @@
+<div class="login-wrapper">
+  <div class="login-card">
+    <!-- Left (Pink) -->
+    <div class="left-panel">
+      <div class="welcome-text">
+        <h2>Welcome to</h2>
+        <h1>student portal</h1>
+        <p>Login to access your account</p>
+      </div>
+      <img src="images/student-logo.png" alt="Logo" />
+    </div>
+
+    <!-- Right (Dark) -->
+    <div class="right-panel">
+      <div class="login-form">
+        <h2>Login your Account</h2>
+        @if (loginError) {
+        <div class="error-panel">
+          {{ loginError }}
+        </div>
+        }
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <!-- Username -->
+          <input
+            formControlName="username"
+            placeholder="Student Number"
+            required
+          />
+
+          <!-- Password  -->
+          <input
+            formControlName="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+
+          <button type="submit">Log In</button>
+
+          <a href="#">Forgot password?</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
